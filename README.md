@@ -2,7 +2,7 @@
 
 # Java Beginner Tasks
 
-A collection of beginner-friendly Java exercises. These tasks are designed to help new Java developers practice fundamental concepts in an incremental manner. Each task focuses on specific Java features or techniques, helping you progress through the language step by step.
+A collection of beginner-friendly Java exercises. These tasks are designed to help new Java developers practice fundamental concepts in an incremental manner. Each task focuses on specific Java features or techniques, helping to progress through the language step by step.
 
 ## Table of Contents
 
