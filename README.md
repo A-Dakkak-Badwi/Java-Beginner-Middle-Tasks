@@ -1,4 +1,3 @@
-# Java
 ---
 
 # Java Beginner Tasks
