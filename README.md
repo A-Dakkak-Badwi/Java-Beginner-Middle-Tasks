@@ -53,17 +53,20 @@ java-beginner-tasks __ src __
 │
 ├─ tag01
 │   ├─ ASCIICalculator.java
-│   ├─
-│   ├─
+│   ├─ ConvertTemperatur.java
+│   ├─ RechteckBerechnung.java
 │   └─ README.md
 │
 ├─ tag02
-│   ├─ IfElseDemo.java
-│   ├─ SwitchCaseDemo.java
+│   ├─ DurchschnittlicheNiederschlagsmenge.java
+│   ├─ ModuloBerechnung.java
+│   ├─ Zeitberechnung.java
 │   └─ README.md
 │
 ├─ tag03
-│   ├─ ArrayListExample.java
+│   ├─ Rabatt.java
+│   ├─ ...
+│   ├─ ...
 │   └─ README.md
 │
 └─ ...
