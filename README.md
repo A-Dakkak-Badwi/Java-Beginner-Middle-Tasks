@@ -31,7 +31,7 @@ This repository contains Java tasks and example programs aimed at novice program
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/java-beginner-tasks.git
+   git clone https://github.com/A-Dakkak-Badwi/java-beginner-tasks.git
    ```
 
 2. **Open the Project**  
