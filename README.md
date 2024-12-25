@@ -47,20 +47,20 @@ A suggested structure for tasks might be:
 ```
 java-beginner-tasks __ src __
 │
-├─ tag01
+├─ tag00
 │   ├─ HelloWorld.java
 │   └─ README.md (contains instructions for this task)
 │
-├─ tag02
+├─ tag01
 │   ├─ BasicSyntax.java
 │   └─ README.md
 │
-├─ tag03
+├─ tag02
 │   ├─ IfElseDemo.java
 │   ├─ SwitchCaseDemo.java
 │   └─ README.md
 │
-├─ tag04
+├─ tag03
 │   ├─ ArrayListExample.java
 │   └─ README.md
 │
