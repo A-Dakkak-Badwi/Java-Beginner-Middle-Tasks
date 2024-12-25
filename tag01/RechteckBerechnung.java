@@ -2,7 +2,7 @@ package tag01;
 
 import javax.swing.*;
 
-public class LaengeBreite {
+public class RechteckBerechnung {
     public static void main(String[] args) {
 
         float Länge = Integer.parseInt(JOptionPane.showInputDialog(null, "Bitte geben Sie die Länge ein: "));
