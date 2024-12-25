@@ -45,7 +45,7 @@ This repository contains Java tasks and example programs aimed at novice program
 A suggested structure for tasks might be:
 
 ```
-java-beginner-tasks
+java-beginner-tasks __ src __
 │
 ├─ tag01
 │   ├─ HelloWorld.java
@@ -60,7 +60,7 @@ java-beginner-tasks
 │   ├─ SwitchCaseDemo.java
 │   └─ README.md
 │
-├─ 04_Collections
+├─ tag04
 │   ├─ ArrayListExample.java
 │   └─ README.md
 │
@@ -117,11 +117,9 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 Have questions, suggestions, or feedback? Feel free to reach out!
 
-- **GitHub Issues**: [Open a new issue](https://github.com/your-username/java-beginner-tasks/issues)  
-- **Email**: youremail@example.com  
+- **GitHub Issues**: [Open a new issue](https://github.com/A-Dakkak-Badwi/java-beginner-tasks/issues)  
+- **Email**: abdulkaderdakkak94000@gmail.com  
 
-Enjoy your journey through Java programming!
+Enjoying the journey through Java programming!
 
 ---
-
-Feel free to customize any sections to match the specifics of your repository. Happy coding!
