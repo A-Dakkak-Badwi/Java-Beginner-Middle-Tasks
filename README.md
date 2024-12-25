@@ -2,12 +2,12 @@
 
 # Java Beginner Tasks
 
-Hear me, Dragonborn of the IDE! The Scrolls have foretold your rise—\
+Hear me, Dragonborn of the IDE! The Scrolls 📜 have foretold your rise—\
 one destined to master the arcane arts of Java.\
-Battle syntax errors, level up from “Hello World” to heroic object-oriented feats, and shout your code into being.\
-If you face monstrous runtime errors, unleash a mighty “Fus Ro Dah!” (but be gentle on your keyboard).
+Battle syntax errors ⚔️, level up from “Hello World” to heroic object-oriented feats 🏆, and shout your code into being 🗣️.\
+If you face monstrous runtime errors, unleash a mighty “Fus Ro Dah!” 🔥 (but be gentle on your keyboard⌨️).
 
-Go forth, hero, and code with honor—may your variables be well-declared and your bugs banished to Oblivion!
+Go forth, hero, and code with honor—may your variables be well-declared 📈 and your bugs banished to Oblivion! 💀
 
 
 ### A collection of beginner-friendly Java exercises. These tasks are designed to help new Java developers practice fundamental concepts in an incremental manner. Each task focuses on specific Java features or techniques, helping to progress through the language step by step.
