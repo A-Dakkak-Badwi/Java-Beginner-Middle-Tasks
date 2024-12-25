@@ -1,7 +1,4 @@
 # Java
-
-Below is a sample README.md that you can adapt for your own “Java Beginner Tasks” repository on GitHub. Feel free to personalize any sections to better match your repository’s contents and style.
-
 ---
 
 # Java Beginner Tasks
