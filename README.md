@@ -52,7 +52,8 @@ java-beginner-tasks __ src __
 │   └─ README.md (contains instructions for this task)
 │
 ├─ tag01
-│   ├─ BasicSyntax.java
+│   ├─ ASCIICalculator.java
+│   ├─ 
 │   └─ README.md
 │
 ├─ tag02
