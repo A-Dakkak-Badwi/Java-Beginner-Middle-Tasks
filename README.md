@@ -2,7 +2,8 @@
 
 # Java Beginner Tasks
 
-Hear me, Dragonborn of the IDE! The Scrolls have foretold your rise—one destined to master the arcane arts of Java.\
+Hear me, Dragonborn of the IDE! The Scrolls have foretold your rise—\
+one destined to master the arcane arts of Java.\
 Battle syntax errors, level up from “Hello World” to heroic object-oriented feats, and shout your code into being.\
 If you face monstrous runtime errors, unleash a mighty “Fus Ro Dah!” (but be gentle on your keyboard).
 
