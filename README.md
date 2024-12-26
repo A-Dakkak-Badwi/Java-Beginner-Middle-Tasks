@@ -60,7 +60,9 @@ This repository is your quest log for mastering Java fundamentals. Journey throu
 A suggested structure for tasks might be:
 
 ```
-java-beginner-tasks __ src __
+java-beginner-tasks
+│
+src
 │
 ├─ tag00
 │   ├─ HelloWorld.java
