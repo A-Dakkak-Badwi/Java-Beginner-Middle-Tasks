@@ -1,6 +1,6 @@
 ---
 
-# Java Beginner Tasks 🐉
+# Java Beginner-Middle Tasks 🐉
 
 Hear me, Dragonborn of the IDE! The Scrolls 📜 have foretold your rise—\
 one destined to master the arcane arts of Java.\
