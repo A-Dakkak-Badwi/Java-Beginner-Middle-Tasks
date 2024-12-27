@@ -10,7 +10,7 @@ If you face monstrous runtime errors, unleash a mighty “Fus Ro Dah!” 🔥 (b
 Go forth, hero, and code with honor—may your variables be well-declared 📈 and your bugs banished to Oblivion! 💀
 
 
-### A collection of beginner-friendly Java exercises. These tasks are designed to help new Java developers practice fundamental concepts in an incremental manner. Each task focuses on specific Java features or techniques, helping to progress through the language step by step.
+### A collection of beginner-middle-friendly Java exercises. These tasks are designed to help new Java developers practice fundamental concepts in an incremental manner. Each task focuses on specific Java features or techniques, helping to progress through the language step by step.
 
 
 ## Table of Contents
