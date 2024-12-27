@@ -1,4 +1,4 @@
-package tag07;
+package tag07.rechteck;
 
 public class Rechteck {
     private double laenge;

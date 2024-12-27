@@ -1,4 +1,4 @@
-package tag07;
+package tag07.kreis;
 
 import tools.Tools;
 
