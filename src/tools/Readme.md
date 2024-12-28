@@ -89,7 +89,7 @@ public static void ausgeben(String nachricht)
 1. **Include** `Tools.java` in your project under the correct package (`tools` by default).
 2. **Import** the class in any file where you need input/output, for example:
    ```java
-   import util.Tools;
+   import tools.Tools;
 
    public class MyClass {
        public static void main(String[] args) {
@@ -100,7 +100,7 @@ public static void ausgeben(String nachricht)
    ```
 3. **Compile and Run** your Java program as usual:
    ```bash
-   javac util/Tools.java MyClass.java
+   javac tools/Tools.java MyClass.java
    java MyClass
    ```
 
@@ -109,7 +109,7 @@ public static void ausgeben(String nachricht)
 ## Example
 
 ```java
-import util.Tools;
+import tools.Tools;
 
 public class ExampleUsage {
     public static void main(String[] args) {
