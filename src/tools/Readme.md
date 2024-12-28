@@ -86,7 +86,7 @@ public static void ausgeben(String nachricht)
 
 ## How to Use
 
-1. **Include** `Tools.java` in your project under the correct package (`util` by default).
+1. **Include** `Tools.java` in your project under the correct package (`tools` by default).
 2. **Import** the class in any file where you need input/output, for example:
    ```java
    import util.Tools;
