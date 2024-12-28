@@ -1,11 +1,6 @@
-
----
-
 # Konto and Bruch Management System
 
-A Java application that combines two systems: 
-1. A **Konto Management System** for simulating bank account operations. 
-2. A **Bruch Management System** for performing operations on fractions.
+A Java application for simulating bank account management and performing operations on fractions. It includes advanced features such as overdraft handling for accounts and arithmetic operations for fractions.
 
 ---
 
@@ -13,6 +8,9 @@ A Java application that combines two systems:
 
 - [Overview](#overview)
 - [How It Works](#how-it-works)
+  - [Konto Class](#konto-class)
+  - [Girokonto Class](#girokonto-class)
+  - [Bruch Class](#bruch-class)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [How to Compile and Run](#how-to-compile-and-run)
@@ -24,77 +22,70 @@ A Java application that combines two systems:
 
 ## Overview
 
+This project consists of two main functionalities:
 1. **Konto Management**:
-   - Includes base `Konto` (account) and `Girokonto` (checking account with overdraft) classes.
-   - Manages deposits, withdrawals, and overdraft limits.
-   - Demonstrated through `KontoTest`.
-
+   - Simulates basic bank account operations like deposits and withdrawals.
+   - Extends functionality with overdraft limits using the `Girokonto` class.
 2. **Bruch Management**:
-   - Provides arithmetic operations and reduction for fractions.
-   - Includes `Bruch` (fraction) class and `BruchTest` for testing.
+   - Operates on fractions, supporting addition, subtraction, and reduction to simplest form.
 
 ---
 
 ## How It Works
 
-### **Konto System**
+### Konto Class
 
-1. **Konto Class**:
-   - Attributes:
-     - `kontonummer`: Unique account number.
-     - `kontostand`: Current account balance.
-   - Methods:
-     - `einzahlen(double)`: Deposits a positive amount.
-     - `auszahlen(double)`: Withdraws money if conditions are met.
-     - `toString()`: Returns a formatted string representation.
+1. **Attributes**:
+   - `kontonummer`: Unique account number.
+   - `kontostand`: Account balance.
 
-2. **Girokonto Class**:
-   - Extends `Konto` and adds:
-     - `limit`: Overdraft limit.
-     - Enhanced withdrawal logic to allow overdraft.
+2. **Methods**:
+   - `einzahlen(double)`: Deposits money into the account.
+   - `auszahlen(double)`: Withdraws money if sufficient balance exists.
+   - `toString()`: Provides a formatted string representation of the account.
 
-3. **KontoTest Class**:
-   - Demonstrates the functionality through examples:
-     - Deposit and withdrawal operations.
-     - Overdraft handling.
+---
 
-### **Bruch System**
+### Girokonto Class
 
-1. **Bruch Class**:
-   - Attributes:
-     - `zaehler`: Numerator.
-     - `nenner`: Denominator.
-   - Methods:
-     - `addiere(Bruch)`: Adds two fractions.
-     - `subtrahiere(Bruch)`: Subtracts fractions.
-     - `kuerzen()`: Reduces the fraction to its simplest form.
-     - `equals(Bruch)`: Compares two fractions.
+1. **Attributes**:
+   - Inherits all attributes from `Konto`.
+   - Adds `limit`: Overdraft limit for the account.
 
-2. **BruchTest Class**:
-   - Demonstrates:
-     - Creation of fractions.
-     - Addition, subtraction, and reduction.
+2. **Methods**:
+   - Overrides `auszahlen(double)` to allow withdrawals up to the overdraft limit.
+   - Adds getters and setters for overdraft limit.
+
+---
+
+### Bruch Class
+
+1. **Attributes**:
+   - `zaehler`: Numerator of the fraction.
+   - `nenner`: Denominator of the fraction.
+
+2. **Methods**:
+   - `addiere(Bruch)`: Adds two fractions and reduces the result.
+   - `subtrahiere(Bruch)`: Subtracts one fraction from another.
+   - `kuerzen()`: Reduces the fraction to its simplest form.
+   - `equals(Bruch)`: Compares two fractions for equality.
+   - `ausgeben()`: Prints the fraction.
 
 ---
 
 ## Features
 
-### Konto Management Features:
-- **Account Operations**:
-  - Deposit and withdraw funds.
-  - Overdraft handling for `Girokonto`.
-- **Encapsulation**:
-  - Private attributes with getter and setter methods.
-- **Formatted Output**:
-  - User-friendly transaction and account details.
+### Konto Features
+- Encapsulation of account data with getter and setter methods.
+- Deposit and withdrawal operations with overdraft limit handling.
+- Validation of account details and transactions.
+- User-friendly formatted output.
 
-### Bruch Management Features:
-- **Arithmetic Operations**:
-  - Addition and subtraction of fractions.
-- **Reduction**:
-  - Automatic simplification of results.
-- **Comparison**:
-  - Equality checks after reduction.
+### Bruch Features
+- Addition, subtraction, and simplification of fractions.
+- Automatic reduction to simplest form.
+- Equality comparison of fractions.
+- Encapsulation of fraction data with validation.
 
 ---
 
@@ -106,11 +97,10 @@ A Java application that combines two systems:
 
 ## How to Compile and Run
 
-1. **Ensure you have the following files**:
-   - `Konto.java` and `Girokonto.java` (for Konto System)
-   - `KontoTest.java` (for Konto Testing)
-   - `Bruch.java` (for Fractions)
-   - `BruchTest.java` (for Fraction Testing)
+1. **Ensure** you have the following files:
+   - `Konto.java` and `Girokonto.java` for account operations.
+   - `Bruch.java` for fraction operations.
+   - `KontoTest.java` and `BruchTest.java` for testing.
 
 2. **Compile** the Java files:
    ```bash
@@ -119,11 +109,11 @@ A Java application that combines two systems:
    ```
 
 3. **Run** the test classes:
-   - For Konto System:
+   - For account operations:
      ```bash
      java tag09.girokonto.KontoTest
      ```
-   - For Bruch System:
+   - For fraction operations:
      ```bash
      java tag09.bruch.BruchTest
      ```
@@ -134,7 +124,7 @@ A Java application that combines two systems:
 
 ### Konto System
 
-#### Test 1: Basic Account Operations
+#### Basic Account Operations
 ```java
 Konto konto = new Konto("123456", 1000.0);
 konto.einzahlen(500.0);
@@ -150,11 +140,11 @@ KontoNr.:        123456
 Kontostand:      1200.00 EUR
 ```
 
-#### Test 2: Overdraft Limit
+#### Overdraft Handling
 ```java
 Girokonto girokonto = new Girokonto("654321", 1000.0, 500.0);
-girokonto.auszahlen(1400.0); // Allowed due to overdraft limit
-girokonto.auszahlen(200.0);  // Exceeds overdraft
+girokonto.auszahlen(1400.0);
+girokonto.auszahlen(200.0);
 ```
 
 **Output**:
@@ -163,14 +153,16 @@ girokonto.auszahlen(200.0);  // Exceeds overdraft
 ❌ Auszahlung fehlgeschlagen. Betrag übersteigt das Kreditlimit.
 ```
 
+---
+
 ### Bruch System
 
-#### Test 1: Addition
+#### Fraction Addition
 ```java
-Bruch bruch = new Bruch(3, 4);
+Bruch bruch1 = new Bruch(3, 4);
 Bruch bruch2 = new Bruch(1, 6);
-Bruch ergebnis = bruch.addiere(bruch2);
-ergebnis.ausgeben();
+Bruch result = bruch1.addiere(bruch2);
+result.ausgeben();
 ```
 
 **Output**:
@@ -178,7 +170,7 @@ ergebnis.ausgeben();
 11/12
 ```
 
-#### Test 2: Reduction
+#### Fraction Simplification
 ```java
 Bruch bruch = new Bruch(6, 8);
 bruch.gekuerztAusgeben();
@@ -194,7 +186,7 @@ bruch.gekuerztAusgeben();
 ## Contributing
 
 1. **Fork** this repository.  
-2. **Create** a new branch (e.g., `feature/overdraft-enhancements`).  
+2. **Create** a new branch (e.g., `feature/overdraft-enhancement`).  
 3. **Commit** your changes.  
 4. **Open a Pull Request** describing your improvements.
 
