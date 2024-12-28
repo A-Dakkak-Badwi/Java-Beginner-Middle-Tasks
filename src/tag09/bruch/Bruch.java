@@ -39,7 +39,7 @@ public class Bruch extends Konto {
     }
 
     public void ausgeben() {
-        System.out.print(zaehler + "/" + nenner);
+        System.out.printin(zaehler + "/" + nenner);
     }
 
     public Bruch addiere(Bruch b) {
