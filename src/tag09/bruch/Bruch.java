@@ -1,7 +1,5 @@
 package tag09.bruch;
 
-import tag09.bruch.Konto;
-
 public class Bruch extends Konto {
     private int zaehler;
     private int nenner;
