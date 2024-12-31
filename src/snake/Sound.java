@@ -1,4 +1,4 @@
-package snake.snakeGame;
+package snake;
 
 import javax.sound.sampled.*;
 import java.io.File;
