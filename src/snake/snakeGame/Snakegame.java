@@ -1,4 +1,4 @@
-package snake.snakeGame;
+package snake;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
